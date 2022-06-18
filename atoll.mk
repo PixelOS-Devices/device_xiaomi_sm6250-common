@@ -97,9 +97,6 @@ PRODUCT_PACKAGES += \
     libgui_vendor \
     libstdc++.vendor
 
-PRODUCT_PACKAGES += \
-    Snap
-
 # Display
 PRODUCT_PACKAGES += \
     android.hardware.graphics.composer@2.4-impl \
@@ -153,6 +150,10 @@ PRODUCT_PACKAGES += \
 # Gatekeeper
 PRODUCT_PACKAGES += \
     android.hardware.gatekeeper@1.0.vendor
+
+# GCamGo
+PRODUCT_PACKAGES += \
+    GCamGOPrebuilt
 
 # GPS
 PRODUCT_PACKAGES += \
