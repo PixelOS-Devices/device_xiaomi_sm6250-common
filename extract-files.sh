@@ -58,6 +58,18 @@ if [ -z "${SRC}" ]; then
     SRC="adb"
 fi
 
+function blob_fixup() {
+    case "${1}" in
+        vendor/etc/init/android.hardware.keymaster@4.0-service-qti.rc)
+            sed -i "s/4\.0/4\.1/g" "${2}"
+            ;;
+        # Remove dependency on android.hidl.base@1.0 for WFD native library.
+        system_ext/lib64/libwfdnative.so)
+            "${PATCHELF}" --remove-needed "android.hidl.base@1.0.so" "${2}"
+            ;;
+    esac
+}
+
 if [ -z "${ONLY_TARGET}" ]; then
     # Initialize the helper for common device
     setup_vendor "${DEVICE_COMMON}" "${VENDOR}" "${ANDROID_ROOT}" true "${CLEAN_VENDOR}"

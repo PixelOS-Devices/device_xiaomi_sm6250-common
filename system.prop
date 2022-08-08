@@ -35,3 +35,8 @@ persist.sys.fflag.override.settings_provider_model=false
 
 # SSR
 persist.vendor.ssr.restart_level=ALL_ENABLE
+vendor.mm.enable.qcom_parser=16777215
+
+# WFD
+persist.debug.wfd.enable=1
+vendor.wfdservice64=enable
