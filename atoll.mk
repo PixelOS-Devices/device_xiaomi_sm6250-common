@@ -318,7 +318,7 @@ PRODUCT_PACKAGES += \
     android.hardware.power-service.xiaomi-libperfmgr
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
+    $(LOCAL_PATH)/configs/power/powerhint.json:$(TARGET_COPY_OUT_VENDOR)/etc/powerhint.json
 
 # Protobuf
 PRODUCT_PACKAGES += \
@@ -396,7 +396,7 @@ PRODUCT_PACKAGES += \
     thermal_symlinks
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
+    $(LOCAL_PATH)/configs/thermal/thermal_info_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/thermal_info_config.json
 
 # TimeKeep
 PRODUCT_PACKAGES += \
@@ -426,7 +426,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.vibrator.service
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/configs/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
+    $(LOCAL_PATH)/configs/vintf/excluded-input-devices.xml:$(TARGET_COPY_OUT_VENDOR)/etc/excluded-input-devices.xml
 
 # VNDK
 PRODUCT_COPY_FILES += \

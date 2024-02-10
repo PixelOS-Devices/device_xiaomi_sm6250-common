@@ -57,7 +57,7 @@ TARGET_USES_HWC2 := true
 TARGET_USES_ION := true
 
 # Filesystem
-TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/config.fs
+TARGET_FS_CONFIG_GEN := $(COMMON_PATH)/configs/fs/config.fs
 
 # FM
 BOARD_HAVE_QCOM_FM := true
@@ -68,11 +68,11 @@ LOC_HIDL_VERSION := 4.0
 
 # HIDL
 DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := \
-    $(COMMON_PATH)/device_framework_matrix.xml \
+    $(COMMON_PATH)/configs/vintf/device_framework_matrix.xml \
     hardware/qcom-caf/common/vendor_framework_compatibility_matrix.xml \
-    vendor/lineage/config/device_framework_matrix.xml
-DEVICE_MATRIX_FILE := $(COMMON_PATH)/compatibility_matrix.xml
-DEVICE_MANIFEST_FILE := $(COMMON_PATH)/manifest.xml
+    $(COMMON_PATH)/configs/vintf/lineage_device_framework_matrix.xml 
+DEVICE_MATRIX_FILE := $(COMMON_PATH)/configs/vintf/compatibility_matrix.xml
+DEVICE_MANIFEST_FILE := $(COMMON_PATH)/configs/vintf/manifest.xml
 
 # Init
 TARGET_INIT_VENDOR_LIB ?= //$(COMMON_PATH):init_xiaomi_atoll
@@ -154,9 +154,9 @@ TARGET_BOARD_PLATFORM := atoll
 TARGET_TAP_TO_WAKE_NODE := "/sys/touchpanel/double_tap"
 
 # Properties
-TARGET_ODM_PROP += $(COMMON_PATH)/odm.prop
-TARGET_SYSTEM_PROP += $(COMMON_PATH)/system.prop
-TARGET_VENDOR_PROP += $(COMMON_PATH)/vendor.prop
+TARGET_ODM_PROP += $(COMMON_PATH)/configs/props/odm.prop
+TARGET_SYSTEM_PROP += $(COMMON_PATH)/configs/props/system.prop
+TARGET_VENDOR_PROP += $(COMMON_PATH)/configs/props/vendor.prop
 
 # Recovery
 BOARD_INCLUDE_RECOVERY_DTBO := true
