@@ -1,6 +1,4 @@
 # All unpinned blobs below are extracted from V14.0.4.0.SJWMIXM (CURTANAGlobal)
-# moonstone: OS1.0.5.0.UMPMIXM (MOONSTONEGlobal)
-# vayu: V14.0.3.0.TJUMIXM (VAYUGlobal)
 
 # ACDB
 vendor/etc/acdbdata/IDP/atoll-wcd937x-snd-card/IDP_WCD937X_Bluetooth_cal.acdb
@@ -434,7 +432,7 @@ vendor/lib64/libcvp_common.so
 vendor/lib64/libcvp_stub.so
 vendor/lib64/vendor.qti.hardware.cvp@1.0.so
 
-# DPM (system) - from moonstone
+# DPM (system) - from moonstone OS1.0.5.0.UMPMIXM
 system_ext/bin/dpmd|5a42bc4e5c841573579e0718d6e80e688767eeed
 system_ext/etc/dpm/dpm.conf|95e27da8c989e96c6faea6f0697bce11955b62a5
 system_ext/etc/init/dpmd.rc|738b638ff04cda368e22c03e16baf90ba157a6fc
@@ -506,7 +504,7 @@ vendor/bin/hw/android.hardware.gatekeeper@1.0-service-qti
 vendor/etc/init/android.hardware.gatekeeper@1.0-service-qti.rc
 vendor/lib64/hw/android.hardware.gatekeeper@1.0-impl-qti.so
 
-# Graphics (Adreno) - from vayu
+# Graphics (Adreno) - from vayu V14.0.3.0.TJUMIXM
 vendor/lib/egl/eglSubDriverAndroid.so|be2f5c4b174bdfaabbe25adde568b72775ef4856
 vendor/lib/egl/libEGL_adreno.so|fb1d14334bf1730a9cffd76a7b22b45ceb0e67ce
 vendor/lib/egl/libGLESv1_CM_adreno.so|715f3463528f1e74ffa02627ee5916a09e0748f5
@@ -1087,7 +1085,7 @@ vendor/firmware/drv2624.rtp
 # WiFi
 vendor/bin/cnss-daemon
 
-# WiFi Display (system) - from moonstone
+# WiFi Display (system) - from moonstone OS1.0.5.0.UMPMIXM
 system/framework/WfdCommon.jar|08bf9850ac45396fe753e208c4d63ec43389dce2
 system_ext/bin/wfdservice64|77de5e319297d09b29712160ed0a9dbdced58911
 system_ext/etc/init/wfdservice.rc|907def8565d8f91f531ca7dfad880af05d540b0c|3dfd29a44f37c971b7707b6e47b2b601a9119d12
